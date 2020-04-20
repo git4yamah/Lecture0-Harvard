@@ -9,13 +9,57 @@
       </style>
   </head>
   <body>
-    <h1 style="color:red;text-align:center;">welcome to my web page!</h1>
-    <h1 style="color: green; text-align:center;"> another paragraph</h1>
+    <h1>welcome to my web page!</h1>
+    <h1>another paragraph here</h1>
     <p>hello,world! This a paragraph of text.</p>
     <p> this another paragraph</p>
   </body>
   </html>
 
 
-  # For style1, this means every h1 will take up the described
-  #attribute in the code.
+  # For style1, the "style" means every h1 will take up the described
+  #attribute for h1 in the code.If I add, h2 it won't take up the criteria
+  # for h1 as defined in the code but the general property for h2.
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>
+      my web webpage
+      </title>
+      <style>
+        h1{color: blue; text-align: center;}
+        </style>
+    </head>
+    <body>
+      <h1>welcome to my web page!</h1>
+      <h1>another paragraph here</h1>
+      <h2>life is different</h2>
+      <p>hello,world! This a paragraph of text.</p>
+      <p> this another paragraph</p>
+    </body>
+    </html>
+
+
+  # but if I add a style for h2 in the code, it willtake up that attribute
+  # and also for any subsequent h2 i add in the code.
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>
+      my web webpage
+      </title>
+      <style>
+        h1{color: blue; text-align: center;}
+        h2{color:green; align-text: center;}
+        </style>
+    </head>
+    <body>
+      <h1>welcome to my web page!</h1>
+      <h1>another paragraph here</h1>
+      <h2>life is different</h2>
+      <p>hello,world! This a paragraph of text.</p>
+      <p> this another paragraph</p>
+    </body>
+    </html>
